@@ -1,18 +1,18 @@
-/*html { 
-  background: url(http://iglweb.com/web/img/web-development.jpg) no-repeat center center fixed; 
+html {
+  background: url(/pic/web-development.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}*/
+}
 
-/* Style the video: 100% width and height to cover the entire window */
+/* Style the video: 100% width and height to cover the entire window
 #myVideo {
     position: fixed;
     z-index: -2;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
     padding: 0,0,0,0;
 }
@@ -41,5 +41,4 @@
 #myBtn:hover {
     background: #ddd;
     color: black;
-}
-
+}*/
