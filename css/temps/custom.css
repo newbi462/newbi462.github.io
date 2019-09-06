@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 
-body {
+.forcebackground {
   background: url(/pic/web-development.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
