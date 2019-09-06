@@ -1,9 +1,13 @@
 html {
-  background: url(/pic/web-development.jpg) no-repeat center center fixed; 
+  background: url(/pic/web-development.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.panel-transparent {
+  background: none;
 }
 
 /* Style the video: 100% width and height to cover the entire window
