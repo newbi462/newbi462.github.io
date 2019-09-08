@@ -14,11 +14,11 @@ html {
   background-size: cover;
 }
 
-/*.navbar {
+.forcefixed {
   position: fixed;
   top: 0;
   width: 100%;
-}*/
+}
 
 
 /* Style the video: 100% width and height to cover the entire window
