@@ -5,8 +5,14 @@
 @import 'SASS/W3css';
 //DOCS: https://www.w3schools.com/w3css/w3css_animate.asp
 
+@import 'SASS/FontAwesome/fontawesome';
+@import 'SASS/FontAwesome/brands';
+@import 'SASS/FontAwesome/regular';
+@import 'SASS/FontAwesome/solid';
+//DOCS: https://fontawesome.com/how-to-use/on-the-web/using-with/sass
 
 
+// CREAT APP DEFULTS + VARs
 .App {
   text-align: center;
 }
@@ -23,21 +29,55 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: $mainFont;
 }
 
 .App-link {
   color: #09d3ac;
 }
 
+
+//NAVBAR CSS
 nav {
-  border-top: solid 1px $maincolor;
+  border-top: solid 1px $mainColor;
   width: 100%;
   display: flex;
   flex-flow: column;
   position: fixed;
   bottom: 0px;
   right: 0px;
+  .menuBar {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    .menuBarLeft {
+      padding: 8px 5px;
+      //width: 150px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .menuBarRight {
+      padding: 8px 5px;
+      //width: 150px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      i {
+        //margin: 8px 0;
+        //width: 5%;
+        margin: 0 8px;
+        transition: transform 0.2s ease-in;
+        &:hover {
+          color: $mainColor;
+          transform: translate(0px) scale(1.25)
+        }
+      }
+    }
+  }
   button {
     //
   }

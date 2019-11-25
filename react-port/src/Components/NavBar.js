@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 
 //import { TweenLite, TweenMax, TimelineLite, TimelineMax,  } from "gsap";
 //import { Tween, Timeline } from 'react-gsap';
+//import { library } from '@fortawesome/fontawesome-svg-core'
+//import { fas } from '@fortawesome/free-solid-svg-icons'
+//import { fab } from '@fortawesome/free-brands-svg-icons'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const NavBar = () => {
   let [animationState, setAnimationState] = useState("hideit");
@@ -10,16 +14,30 @@ export const NavBar = () => {
   return (
     <>
     <nav >
-      <div>
-        <div
-          onClick=
+      <div className="menuBar">
+        <div className="menuBarLeft">
+          <i onClick=
             {() => {
               console.log(animationState);
               setAnimationState(animationState = "w3-animate-bottom");
               console.log(animationState);
             }}
-          >
-          Click Me
+            class={"fas fa-bars"}
+          ></i>
+          <div
+            onClick=
+              {() => {
+                console.log(animationState);
+                setAnimationState(animationState = "w3-animate-bottom");
+                console.log(animationState);
+              }}
+            >
+            Click Me
+          </div>
+        </div>
+        <div className="menuBarRight">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin"></i>
         </div>
       </div>
 
