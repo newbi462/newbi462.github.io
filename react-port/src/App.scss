@@ -61,7 +61,22 @@ nav {
       flex-flow: row wrap;
       justify-content: space-around;
       align-items: center;
-
+      .nameBox {
+        padding: 0 8px;
+        transition: transform 0.2s ease-in;
+        &:hover {
+          color: $mainColor;
+          transform: translate(0px) scale(1.12)
+        }
+      }
+      i {
+        margin: 0 8px;
+        transition: transform 0.2s ease-in;
+        &:hover {
+          color: $mainColor;
+          transform: translate(0px) scale(1.25)
+        }
+      }
     }
     .menuBarRight {
       padding: 8px 5px;
@@ -98,6 +113,11 @@ nav {
   position: fixed;
   bottom: 0px;
   padding-bottom: 65px;
+  .xInSlidUp {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
 }
 .toggleMainBottomHide {
   z-index: 900;

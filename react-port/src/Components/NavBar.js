@@ -18,6 +18,14 @@ export const NavBar = () => {
   return (
     <>
     <div className={slideUpState}>
+      <i onClick=
+        {() => {
+          setSlideUpState("animate-bottom-rev toggleMainBottomHide");
+          setHambugerState("menuBarLeft");
+          setXToggleState("hideit")
+        }}
+        className="fas fa-times xInSlidUp"
+      ></i>
       <p>Show Me</p>
       <p>Show Me</p>
       <p>Show Me</p>
@@ -63,9 +71,9 @@ export const NavBar = () => {
           <div className="nameBox"
             onClick=
               {() => {
-                setSlideUpState("w3-animate-bottom  toggleMainBottom");
-                setHambugerState("hideit");
-                setXToggleState("menuBarLeft")
+                setSlideUpState("animate-bottom-rev toggleMainBottomHide");
+                setHambugerState("menuBarLeft");
+                setXToggleState("hideit")
               }}
             >
             Russ Hacker
@@ -75,8 +83,12 @@ export const NavBar = () => {
 
 
         <div className="menuBarRight">
-          <i className="fab fa-github"></i>
-          <i className="fab fa-linkedin"></i>
+          <Link to="https://github.com/newbi462">
+            <i className="fab fa-github"></i>
+          </Link>
+          <Link to="https://www.linkedin.com/in/russell-h-bb049256/">
+            <i className="fab fa-linkedin"></i>
+          </Link>
         </div>
       </div>
 
