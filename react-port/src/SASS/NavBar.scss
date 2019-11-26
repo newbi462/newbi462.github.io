@@ -1,0 +1,68 @@
+//NAVBAR CSS
+nav {
+  background: $backgroundColor;
+  border-top: solid 1px $mainColor;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 999;
+  .menuBar {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    .menuBarLeft {
+      padding: 8px 5px;
+      //width: 150px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      .nameBox {
+        padding: 0 8px;
+        transition: transform 0.2s ease-in;
+        &:hover {
+          color: $mainColor;
+          transform: translate(0px) scale(1.12)
+        }
+      }
+      i {
+        margin: 0 8px;
+        transition: transform 0.2s ease-in;
+        &:hover {
+          color: $mainColor;
+          transform: translate(0px) scale(1.25)
+        }
+      }
+    }
+    .menuBarRight {
+      padding: 8px 5px;
+      //width: 150px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      i {
+        //margin: 8px 0;
+        //width: 5%;
+        margin: 0 8px;
+        transition: transform 0.2s ease-in;
+        &:hover {
+          color: $mainColor;
+          transform: translate(0px) scale(1.25)
+        }
+      }
+    }
+  }
+  button {
+    //
+  }
+  @media (max-width: $tablet) {}
+  @media (max-width: $mobile) {}
+}
+.w3-animate-bottom {
+  animation:animatebottom 1.2s;
+}

@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 //import { fab } from '@fortawesome/free-brands-svg-icons'
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export const NavBar = () => {
-  let [animationState, setAnimationState] = useState("hideit");
+import { SlideUp } from "./NavBar/SlideUp";
 
+export const NavBar = () => {
   let [slideUpState, setSlideUpState] = useState("hideit");
   let [hambugerState, setHambugerState] = useState("menuBarLeft");
   let [xToggleState, setXToggleState] = useState("hideit");
@@ -18,20 +18,11 @@ export const NavBar = () => {
   return (
     <>
     <div className={slideUpState}>
-      <i onClick=
-        {() => {
-          setSlideUpState("animate-bottom-rev toggleMainBottomHide");
-          setHambugerState("menuBarLeft");
-          setXToggleState("hideit")
-        }}
-        className="fas fa-times xInSlidUp"
-      ></i>
-      <p>Show Me</p>
-      <p>Show Me</p>
-      <p>Show Me</p>
-      <p>Show Me</p>
-      <p>Show Me</p>
-      <p>Show Me</p>
+      <SlideUp
+        setSlideUpState={setSlideUpState}
+        setHambugerState={setHambugerState}
+        setXToggleState={setXToggleState}
+      />
     </div>
 
 
