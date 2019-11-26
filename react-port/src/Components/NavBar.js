@@ -11,39 +11,76 @@ import { Link } from "react-router-dom";
 export const NavBar = () => {
   let [animationState, setAnimationState] = useState("hideit");
 
+  let [slideUpState, setSlideUpState] = useState("hideit");
+  let [hambugerState, setHambugerState] = useState("menuBarLeft");
+  let [xToggleState, setXToggleState] = useState("hideit");
+
   return (
     <>
-    <nav >
+    <div className={slideUpState}>
+      <p>Show Me</p>
+      <p>Show Me</p>
+      <p>Show Me</p>
+      <p>Show Me</p>
+      <p>Show Me</p>
+      <p>Show Me</p>
+    </div>
+
+
+    <nav>
       <div className="menuBar">
-        <div className="menuBarLeft">
+
+        <div className={hambugerState}>
           <i onClick=
             {() => {
-              console.log(animationState);
-              setAnimationState(animationState = "w3-animate-bottom");
-              console.log(animationState);
+              setSlideUpState("w3-animate-bottom toggleMainBottom");
+              setHambugerState("hideit");
+              setXToggleState("menuBarLeft")
             }}
-            class={"fas fa-bars"}
+            className="fas fa-bars"
           ></i>
-          <div
+          <div className="nameBox"
             onClick=
               {() => {
-                console.log(animationState);
-                setAnimationState(animationState = "w3-animate-bottom");
-                console.log(animationState);
+                setSlideUpState("w3-animate-bottom  toggleMainBottom");
+                setHambugerState("hideit");
+                setXToggleState("menuBarLeft")
               }}
             >
-            Click Me
+            Russ Hacker
           </div>
         </div>
+
+        <div className={xToggleState}>
+          <i onClick=
+            {() => {
+              setSlideUpState("animate-bottom-rev toggleMainBottomHide");
+              setHambugerState("menuBarLeft");
+              setXToggleState("hideit")
+            }}
+            className="fas fa-times"
+          ></i>
+          <div className="nameBox"
+            onClick=
+              {() => {
+                setSlideUpState("w3-animate-bottom  toggleMainBottom");
+                setHambugerState("hideit");
+                setXToggleState("menuBarLeft")
+              }}
+            >
+            Russ Hacker
+          </div>
+        </div>
+
+
+
         <div className="menuBarRight">
-          <i class="fab fa-github"></i>
-          <i class="fab fa-linkedin"></i>
+          <i className="fab fa-github"></i>
+          <i className="fab fa-linkedin"></i>
         </div>
       </div>
 
-      <div className={animationState}>
-        <p>Show Me</p>
-      </div>
+
     </nav>
     </>
   );
