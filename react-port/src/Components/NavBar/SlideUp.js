@@ -21,7 +21,7 @@ export const SlideUp = ( props ) => {
 
         <section className="followMe">
           <h2>Follow me on ...</h2>
-          <ul class="iconsSlideUp">
+          <ul className="iconsSlideUp">
             <li><i className="fab fa-twitter"></i></li>
             <li><i className="fab fa-facebook-square"></i></li>
             <li><i className="fab fa-instagram"></i>{/*Instagram*/}</li>

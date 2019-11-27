@@ -1,8 +1,9 @@
 //SLIDEUP BOX MAIN MENU
 .toggleMainBottom, .toggleMainBottomHide {// set in NaveBar onclick
+  background: $backgroundColor;
   z-index: 900;
   width: 100%;
-  opacity: 0.55;
+  opacity: 0.78;
   border-top: solid 1px $mainColor;
   position: fixed;
   bottom: 0px;
@@ -29,6 +30,7 @@
         color: $altFont;
         font-size: 0.85rem;
         text-align: left;
+        text-shadow: $altBackgroundColor 1px 1px;
       }
       .followMe{
         .iconsSlideUp {

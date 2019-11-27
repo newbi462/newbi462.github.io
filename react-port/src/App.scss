@@ -40,7 +40,34 @@
 @import 'SASS/NavBar';
 @import 'SASS/NavBar/SlideUp';
 
+//Homepage
+.tileBox {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-bottom: 70px;
+  .gridBox {
+    width: 33.333%;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    padding: 13px 0;
+    //height: 250px;
+    //border: solid 1px white;
+    i {
+      font-size: 13rem;
+    }
+  }
+  .Odd {
+    border: solid 1px white;
+  }
 
+}
+.w3-spin{
+  animation:w3-spin 13s infinite linear;
+}
 
 
 

@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 import './App.scss';
 
 import { NavBar } from "./Components/NavBar";
+import { HomePage } from "./Components/HomePage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
 
         <NavBar />
 
+        <Route exact path="/" component={HomePage} />
         <Route
           path="/https://github.com/newbi462"
           component={() => {
