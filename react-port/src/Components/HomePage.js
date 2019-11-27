@@ -12,7 +12,7 @@ export const HomePage = () => {
         <i className="fab fa-html5"></i>
         <span>HTML5</span>
       </div>
-      <div className="gridBox">
+      <div className="gridBox w3-animate-zoom">
         <i className="fab fa-github-square"></i>
         <span>GitHub</span>
       </div>

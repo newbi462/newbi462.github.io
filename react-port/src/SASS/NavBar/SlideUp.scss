@@ -3,7 +3,7 @@
   background: $backgroundColor;
   z-index: 900;
   width: 100%;
-  opacity: 0.78;
+  opacity: 0.98;
   border-top: solid 1px $mainColor;
   position: fixed;
   bottom: 0px;
@@ -119,7 +119,21 @@
     }
   }
   @media (max-width: $tablet) {}
-  @media (max-width: $mobile) {}
+  @media (max-width: $mobile) {
+    .flexMe {
+      flex-flow: column;
+      .slideUpLeft {
+        width: 94%;
+        margin: 2px auto;
+        padding: 0;
+      }
+      .slideUpRight {
+        width: 94%;
+        margin: 2px auto;
+        padding: 0;
+      }
+    }
+  }
 }
 .animate-bottom-rev {
   animation:animatebottomRev 0.8s;

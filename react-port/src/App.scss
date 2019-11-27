@@ -63,7 +63,16 @@
   .Odd {
     border: solid 1px white;
   }
-
+  @media (max-width: $tablet) {
+    .gridBox {
+      width: 50%;
+    }
+  }
+  @media (max-width: $mobile) {
+    .gridBox {
+      width: 100%;
+    }
+  }
 }
 .w3-spin{
   animation:w3-spin 13s infinite linear;
