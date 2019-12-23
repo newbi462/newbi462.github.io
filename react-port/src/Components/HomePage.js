@@ -1,10 +1,20 @@
 import React from "react";
 
-export const HomePage = () => {
+export const HomePage = (props) => {
   return (
     <>
     <div className="tileBox">
-      <div className="gridBox w3-animate-zoom">
+      <div
+        onClick={() => {
+          console.log("clicked");
+          //props.history.push("/React-Demos");
+          setTimeout(() => {
+            console.log("I ran");
+            props.history.push("/React-Demos");
+          }, 1500);
+        }}
+        className="gridBox w3-animate-zoom"
+      >
         <i className="fab fa-react w3-spin"></i>
         <span>React</span>
       </div>
