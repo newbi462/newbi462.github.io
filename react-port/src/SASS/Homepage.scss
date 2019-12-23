@@ -1,5 +1,7 @@
 //Homepage
 .tileBox {
+//  position: absolute;
+//  top: 0px;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -21,6 +23,22 @@
   }
   .Odd {
     border: solid 1px white;
+  }
+  .locktop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+  }
+  .hover {
+    &:hover {
+      color: $mainColor;
+      border: solid 1px $mainColor;
+    }
+  }
+  .react-Selected, .html5-Selected {
+    color: $mainColor;
+    z-index: 99;
   }
   @media (max-width: $tablet) {
     .gridBox {

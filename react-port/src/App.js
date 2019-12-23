@@ -6,6 +6,7 @@ import './App.scss';
 
 import { NavBar } from "./Components/NavBar";
 import { HomePage } from "./Components/HomePage";
+import { ReactDemos } from "./Components/ReactDemos";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         <NavBar />
 
         <Route exact path="/" component={HomePage} />
+        <Route path="/ReactDemos" component={ReactDemos} />
+
         <Route
           path="/https://github.com/newbi462"
           component={() => {
