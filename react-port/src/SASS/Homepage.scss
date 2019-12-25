@@ -16,13 +16,13 @@
     padding: 13px 0;
     //height: 250px;
     //border: solid 1px white;
-    border: solid 1px white;
+    border: solid 1px $mainFont;
     i {
       font-size: 13rem;
     }
   }
   .Odd {
-    border: solid 1px white;
+    border: solid 1px $mainFont;
   }
   .locktop {
     position: absolute;
