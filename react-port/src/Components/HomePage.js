@@ -30,7 +30,7 @@ export const HomePage = (props) => {
             : `gridBox ${selectedState} ${shiftedState}`
         }
       >
-        <i className="fab fa-react w3-spin"></i>
+        <i className="fab fa-react"></i>
         <span>React</span>
       </div>
       <div
