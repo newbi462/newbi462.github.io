@@ -65,18 +65,19 @@ export const HomePage = (props) => {
         <span>JavaScript</span>
       </div>
       <div className={`gridBox Odd ${animateState}`}>
-        <i className="fab fa-php"></i>
-        <span>PHP</span>
+        <i className="fab fa-node"></i>
+        <span>node.js</span>
       </div>
       <div className={`gridBox ${animateState}`}>
-        <i className="fab fa-bootstrap"></i>
-        <span>Bootstrap</span>
+        <i className="fab fa-php"></i>
+        <span>PHP</span>
       </div>
       <div className={`gridBox Odd ${animateState}`}>
         Formik
       </div>
       <div className={`gridBox ${animateState}`}>
-        ReactStrap
+      <i className="fab fa-bootstrap"></i>
+      <span>Bootstrap ReactStrap</span>
       </div>
       <div className={`gridBox Odd ${animateState}`}>
         Component Styles
