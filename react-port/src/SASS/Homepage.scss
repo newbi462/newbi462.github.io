@@ -22,6 +22,16 @@
     i {
       font-size: 13rem;
     }
+    img {
+      height: 13rem;
+      width: 13rem;
+      text-align: center;
+      margin: 0 auto 0 auto;
+      filter: invert(1);
+      &:hover {
+        filter: invert(60%) sepia(94%) saturate(1873%) hue-rotate(124deg) brightness(100%) contrast(93%);
+      }
+    }
   }
   .Odd {
     border: solid 1px $mainFont;
