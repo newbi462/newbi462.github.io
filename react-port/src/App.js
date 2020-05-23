@@ -28,7 +28,7 @@ function App() {
         <NavBar />
 
         <Route exact path="/" component={HomePage} />
-        <Route path="/ReactDemos" component={ReactDemos} />
+        <Route path="/#/ReactDemos" component={ReactDemos} />
 
         <Route
           path="/https://github.com/newbi462"
