@@ -89,7 +89,8 @@ export const HomePage = (props) => {
       <span>Bootstrap ReactStrap</span>
       </div>
       <div className={`gridBox Odd ${animateState}`}>
-        Component Styles
+      <i className="fab fa-python"></i>
+      <span>Python</span>
       </div>
     </div>
     </>
