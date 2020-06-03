@@ -1,14 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
+//Tools and Hooks
+
+//Style
 // npm install --save-dev @iconify/react @iconify/icons-logos
 import { Icon, InlineIcon } from '@iconify/react';
 import graphqlIcon from '@iconify/icons-logos/graphql';
 //not using right now as filer is hard code hack
 
+//Components
+
+//Coontext/STATE
+import { ContextBox } from "./../Context/ContextBox";
+
+
 export const HomePage = (props) => {
   const [animateState, setAnimateState] = useState("w3-animate-zoom");
-  const [selectedState, setSelectedState] = useState("test42a");
+  //const [selectedState, setSelectedState] = useState("test42a");
+  const { selectedState, setSelectedState } = useContext(ContextBox);
   const [shiftedState, setShiftedState] = useState("");
+  console.log(selectedState);
 
   let whenClicked = (clicked, shift, route) => {
     console.log(clicked);
@@ -30,9 +41,10 @@ export const HomePage = (props) => {
       <div
         onClick={() => whenClicked("react-Selected", "", "/ReactDemos")}
         className={
-          (selectedState != "react-Selected")
+          (selectedState != "react-Selected")// != for difrent effect
             ? `gridBox hover ${animateState}`
-            : `gridBox ${selectedState} ${shiftedState}`
+            : `gridBox hover ${animateState}`
+            //: `gridBox ${selectedState} ${shiftedState}`
         }
       >
         <i className="fab fa-react"></i>
@@ -47,7 +59,7 @@ export const HomePage = (props) => {
         }
       >
         <i className="fab fa-html5"></i>
-        <span>HTML5</span>
+        <span>HTML5 </span>
       </div>
       <div className={`gridBox ${animateState}`}>
         <i className="fab fa-github-square"></i>

@@ -41,35 +41,99 @@
 @import 'SASS/NavBar/SlideUp';
 @import 'SASS/Homepage';
 
+.active {
+  color: $mainColor; 
+}
+
+.leftbar {
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  i {
+    font-size: 2.1rem;
+    &:hover {
+      color: $mainColor;
+      //border: solid 1px $mainColor;
+    }
+  }
+  img {
+    height: 2.1rem;
+    width: 2.1rem;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    filter: invert(1);
+    &:hover {
+      filter: invert(60%) sepia(94%) saturate(1873%) hue-rotate(124deg) brightness(100%) contrast(93%);
+    }
+  }
+  @media (max-width: $tablet) {
+    display: none;
+  }
+  @media (max-width: $mobile) {
+  }
+}
 
 //ReactDemos
 .reactBox{
   display: flex;
-  position: absolute;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 92%;
   top: 0px;
-  left: 0px;
+  right: 0px;
+  padding-bottom: 70px;
   .make23box {
-    width: 66.66%;
-    border: 1px solid $mainFont;
-    padding: 0px;
+    width: 65%;
+    border-bottom: 1px solid $mainFont;
+    padding: 10px 15px;
     margin: 0px;
-    iframe {
-      width: 100%;
-      height: 100%;
-      padding: 0px;
-      margin: 0px;
+    text-align: left;
+    ul {
+     list-style-type: disc;
+     list-style-position: inside;
+     font-size: 1.2rem;
+     padding-left: 15px;
     }
+    ol {
+     list-style-type: decimal;
+     list-style-position: inside;
+    }
+    ul ul, ol ul {
+     list-style-type: circle;
+     list-style-position: inside;
+     margin-left: 15px;
+    }
+    ol ol, ul ol {
+     list-style-type: lower-latin;
+     list-style-position: inside;
+     margin-left: 15px;
+    }
+  }
+  .make23box-img {
+    width: 35%;
+    border-bottom: 1px solid $mainFont;
   }
   @media (max-width: $tablet) {
     .make23box {
       width: 50%;
-      height: 25%px;
+    }
+    .make23box-img {
+      width: 50%;
     }
   }
   @media (max-width: $mobile) {
     .make23box {
       width: 100%;
-      height: 200px;
+      ul {
+       list-style-type: disc;
+       list-style-position: inside;
+       font-size: 0.85rem;
+       padding-left: 2px;
+      }
+    }
+    .make23box-img {
+      width: 100%;
     }
   }
 }
