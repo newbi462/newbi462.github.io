@@ -19,7 +19,7 @@ export const HomePage = (props) => {
   //const [selectedState, setSelectedState] = useState("test42a");
   const { selectedState, setSelectedState } = useContext(ContextBox);
   const [shiftedState, setShiftedState] = useState("");
-  console.log(selectedState);
+  //console.log(selectedState);
 
   let whenClicked = (clicked, shift, route) => {
     console.log(clicked);
