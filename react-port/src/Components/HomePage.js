@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 
 //Tools and Hooks
+import { Route } from "react-router-dom";
 
 //Style
 // npm install --save-dev @iconify/react @iconify/icons-logos
@@ -34,6 +35,7 @@ export const HomePage = (props) => {
       props.history.push(route);
     }, 599);
   };
+  //console.log(props);
 
   return (
     <>

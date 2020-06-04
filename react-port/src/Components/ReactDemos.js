@@ -10,10 +10,12 @@ import { LeftBar } from "./NavBar/LeftBar.js";
 //Coontext/STATE
 
 
-export const ReactDemos = () => {
+export const ReactDemos = (props) => {
+  console.log("reactpage");
+  console.log(props);
   return (
     <>
-    <LeftBar />
+    <LeftBar {...props} />
 
     <div className="reactBox">
       <div className="make23box w3-animate-zoom">

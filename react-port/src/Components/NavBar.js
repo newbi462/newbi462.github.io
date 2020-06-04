@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 import { SlideUp } from "./NavBar/SlideUp";
 
-export const NavBar = () => {
+export const NavBar = (props) => {
   let [slideUpState, setSlideUpState] = useState("hideit");
   let [hambugerState, setHambugerState] = useState("menuBarLeft");
   let [xToggleState, setXToggleState] = useState("hideit");

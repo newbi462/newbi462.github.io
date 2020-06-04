@@ -15,16 +15,16 @@ export const SlideUp = ( props ) => {
     <div className="flexMe">
       <div className="slideUpLeft">
         <section>
-          <h2>Full Stack Web Developer In Training</h2>
-          <p>An experienced old school LAMP developer looking to update their knowledge, and expand their Full Stack skill sets to modern standards. I look forward to putting my experience, knowledge, and skillsets to work solving whatever problems you need help with. </p>
+          <h2>Full Stack Web Developer</h2>
+          <p>An experienced old school LAMP developer, and new school MERN developer looking to put their knowledge to work for you. As a more seasoned developer, I have solved problems in many ways over the years. End of the day, I like to get something done. It is just my personality type. I do not do idle well. My main objective is always how much was accomplished, less so how hard I had to work to get it done. I prefer to work smart, but there are times one must work hard.</p>
         </section>
 
         <section className="followMe">
           <h2>Follow me on ...</h2>
           <ul className="iconsSlideUp">
-            <li><i className="fab fa-twitter"></i></li>
+            {/*<li><i className="fab fa-twitter"></i></li>
             <li><i className="fab fa-facebook-square"></i></li>
-            <li><i className="fab fa-instagram"></i>{/*Instagram*/}</li>
+            <li><i className="fab fa-instagram"></i></li>*/}
             <li>
               <Link to="https://github.com/newbi462">
                 <i className="fab fa-github"></i>
@@ -42,7 +42,8 @@ export const SlideUp = ( props ) => {
 
       <section className="slideUpRight">
         <h2>Get in touch</h2>
-        <form method="post" action="#">
+        {/*<form method="post" action="/">*/}
+        <form>
           <div className="fields">
             <div className="field half">
               <input type="text" name="name" id="name" placeholder="Name" />

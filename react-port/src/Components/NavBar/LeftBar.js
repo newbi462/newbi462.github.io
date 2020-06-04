@@ -9,13 +9,33 @@ import React, { useContext } from "react";
 //Coontext/STATE
 import { ContextBox } from "./../../Context/ContextBox";
 
-export const LeftBar = () => {
+export const LeftBar = (props) => {
   const { selectedState, setSelectedState } = useContext(ContextBox);
   //console.log(selectedState);
+
+  let whenClicked = (clicked, shift, route) => {
+    console.log(clicked);
+    setSelectedState(clicked);
+    //setShiftedState(shift);
+    //setAnimateState("animate-zoom-rev");
+    //props.history.push("/React-Demos");
+    setTimeout(() => {
+      //setAnimateState("hideImportant");
+      //setShiftedState("locktop");
+      //console.log(props);
+      props.history.push(route);
+    }, 599);
+  };
+  console.log("left bar");
+  console.log(props);
 
   return (
     <>
     <div className="leftbar w3-animate-zoom">
+      <i
+        onClick={() => whenClicked("home", "", "/")}
+        className="fas fa-home"
+      ></i>
       <i
         className={
           (selectedState === "react-Selected")// != for difrent effect
