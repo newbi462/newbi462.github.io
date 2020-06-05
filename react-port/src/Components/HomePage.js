@@ -107,11 +107,25 @@ export const HomePage = (props) => {
         <i className="fab fa-sass"></i>
         <span>SASS</span>
       </div>
-      <div className={`gridBox ${animateState}`}>
+      <div
+        onClick={() => whenClicked("js-Selected", "", "/AboutJSandNODE")}
+        className={
+          (selectedState != "js-Selected")
+            ? `gridBox hover ${animateState}`
+            : `gridBox hover ${animateState}`
+        }
+      >
         <i className="fab fa-js-square"></i>
         <span>JavaScript</span>
       </div>
-      <div className={`gridBox Odd ${animateState}`}>
+      <div
+        onClick={() => whenClicked("node-Selected", "", "/AboutJSandNODE")}
+        className={
+          (selectedState != "node-Selected")
+            ? `gridBox Odd hover ${animateState}`
+            : `gridBox Odd hover ${animateState}`
+        }
+      >
         <i className="fab fa-node"></i>
         <span>node.js</span>
       </div>

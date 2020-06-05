@@ -13,6 +13,7 @@ import { HomePage } from "./Components/HomePage";
 import { ReactDemos } from "./Components/ReactDemos";
 import { HTMLDemos } from "./Components/HTMLDemos";
 import { AboutCSSs } from "./Components/AboutCSSs";
+import { AboutJSandNODE } from "./Components/AboutJSandNODE";
 
 //Coontext/STATE
 import { ContextBox } from "./Context/ContextBox";
@@ -43,6 +44,7 @@ function App() {
           <Route path="/ReactDemos" component={ReactDemos} />
           <Route path="/HTMLDemos" component={HTMLDemos} />
           <Route path="/AboutCSSs" component={AboutCSSs} />
+          <Route path="/AboutJSandNODE" component={AboutJSandNODE} />
 
           <Route
             path="/https://github.com/newbi462"

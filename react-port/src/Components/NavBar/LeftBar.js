@@ -66,7 +66,7 @@ export const LeftBar = (props) => {
       <i
         onClick={() => whenClicked("css3-Selected", "", "/AboutCSSs")}
         className={
-            (selectedState === "css3-Selected")// != for difrent effect
+            (selectedState === "css3-Selected" || selectedState === "less-Selected" || selectedState === "sass-Selected")// != for difrent effect
               ? `fab fa-css3-alt active`
               : `fab fa-css3-alt`
               //: `gridBox ${selectedState} ${shiftedState}`
@@ -75,7 +75,7 @@ export const LeftBar = (props) => {
       <i
         onClick={() => whenClicked("less-Selected", "", "/AboutCSSs")}
         className={
-            (selectedState === "less-Selected")// != for difrent effect
+            (selectedState === "css3-Selected" || selectedState === "less-Selected" || selectedState === "sass-Selected")// != for difrent effect
               ? `fab fa-less active`
               : `fab fa-less`
               //: `gridBox ${selectedState} ${shiftedState}`
@@ -84,23 +84,25 @@ export const LeftBar = (props) => {
       <i
         onClick={() => whenClicked("sass-Selected", "", "/AboutCSSs")}
         className={
-            (selectedState === "sass-Selected")// != for difrent effect
+            (selectedState === "css3-Selected" || selectedState === "less-Selected" || selectedState === "sass-Selected")// != for difrent effect
               ? `fab fa-sass active`
               : `fab fa-sass`
               //: `gridBox ${selectedState} ${shiftedState}`
         }
       ></i>
       <i
+        onClick={() => whenClicked("js-Selected", "", "/AboutJSandNODE")}
         className={
-            (selectedState === "js-Selected")// != for difrent effect
+            (selectedState === "js-Selected" || selectedState === "node-Selected")// != for difrent effect
               ? `fab fa-js-square active`
               : `fab fa-js-square`
               //: `gridBox ${selectedState} ${shiftedState}`
         }
       ></i>
       <i
+        onClick={() => whenClicked("node-Selected", "", "/AboutJSandNODE")}
         className={
-            (selectedState === "node-Selected")// != for difrent effect
+            (selectedState === "js-Selected" || selectedState === "node-Selected")// != for difrent effect
               ? `fab fa-node active`
               : `fab fa-node`
               //: `gridBox ${selectedState} ${shiftedState}`
