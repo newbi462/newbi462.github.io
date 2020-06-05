@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 
 //Tools and Hooks
 
@@ -11,14 +11,16 @@ import { LeftBar } from "./NavBar/LeftBar.js";
 
 
 export const ReactDemos = (props) => {
-  console.log("reactpage");
-  console.log(props);
+  const [animateState, setAnimateState] = useState("w3-animate-zoom");
+
+
+
   return (
     <>
-    <LeftBar {...props} />
+    <LeftBar {...props} animateState={animateState} setAnimateState={setAnimateState}/>
 
     <div className="reactBox">
-      <div className="make23box w3-animate-zoom">
+      <div className={`make23box ${animateState}`}>
         <h2><a href="https://stage.missionctrl.dev/">Mission Control</a></h2>
         <p>Programs management solution to at a glance know: program, product, and project status.</p>
         <p>React | SASS | JavaScript | PostgreSQL | AWS | GraphQL | Prism | Apollo | Docker | OKTA</p>
@@ -30,13 +32,13 @@ export const ReactDemos = (props) => {
         <p><a href="https://github.com/Lambda-School-Labs/mission-control-be">Backend Source</a></p>
         <p><a href="https://github.com/Lambda-School-Labs/mission-control-fe">Frontend Source</a></p>
       </div>
-      <div className="make23box-img w3-animate-zoom">
+      <div className={`make23box-img ${animateState}`}>
         <img src="https://raw.githubusercontent.com/newbi462/newbi462.github.io/Build-On/react-port/src/img/Toggle.png" alt="Mission Control" />
       </div>
-      <div className="make23box-img w3-animate-zoom">
+      <div className={`make23box-img ${animateState}`}>
         <img src="https://raw.githubusercontent.com/newbi462/newbi462.github.io/Build-On/react-port/src/img/nanny-in-a-flash-app.png" alt="Nanny in a Flash App" />
       </div>
-      <div className="make23box w3-animate-zoom">
+      <div className={`make23box ${animateState}`}>
         <h2><a href="https://nanny-scheduler-fe.anthonykizer88.now.sh/">Nanny in a Flash App</a></h2>
         <p>Helps a busy parent, select a nanny based on availability, location, or what services they can offer</p>
         <p>React | SASS | axios | Yup | FORMIK</p>
@@ -46,7 +48,7 @@ export const ReactDemos = (props) => {
         </ul>
         <p><a href="https://github.com/Build-Week-Nanny-Scheduler/nanny-scheduler-FE">App Source Code</a></p>
       </div>
-      <div className="make23box w3-animate-zoom">
+      <div className={`make23box ${animateState}`}>
         <h2><a href="https://compassionate-lamarr-da90b8.netlify.app/">Lambdi Pet</a></h2>
         <p>A digital pet that changes based on how a child chooses to eat.</p>
         <p>ContextAPI | axios | SASS | reactstrap | Formik | Yup | styled-components | recharts | React</p>
@@ -56,7 +58,7 @@ export const ReactDemos = (props) => {
         </ul>
         <p><a href="https://github.com/Build-Week-Gigapet1/FE">Source Code</a></p>
       </div>
-      <div className="make23box-img w3-animate-zoom">
+      <div className={`make23box-img ${animateState}`}>
         <img src="https://raw.githubusercontent.com/newbi462/newbi462.github.io/Build-On/react-port/src/img/l-pet.png" alt="Lambdi Pet" />
       </div>
     </div>

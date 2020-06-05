@@ -53,17 +53,24 @@ export const HomePage = (props) => {
         <span>React</span>
       </div>
       <div
-        onClick={() => whenClicked("html5-Selected", "html5-shift")}
+        onClick={() => whenClicked("html5-Selected", "", "/HTMLDemos")}
         className={
           (selectedState != "html5-Selected")
-            ? `gridBox Odd ${animateState}`
-            : `gridBox Odd ${selectedState} ${shiftedState}`
+            ? `gridBox Odd hover ${animateState}`
+            : `gridBox Odd hover ${animateState}`
         }
       >
         <i className="fab fa-html5"></i>
         <span>HTML5 </span>
       </div>
-      <div className={`gridBox ${animateState}`}>
+      <div
+        onClick={() => whenClicked("github-Selected", "", "/https://github.com/newbi462")}
+        className={
+          (selectedState != "html5-Selected")
+            ? `gridBox hover ${animateState}`
+            : `gridBox hover ${animateState}`
+        }
+      >
         <i className="fab fa-github-square"></i>
         <span>GitHub</span>
       </div>

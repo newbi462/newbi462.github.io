@@ -17,8 +17,9 @@ export const LeftBar = (props) => {
     console.log(clicked);
     setSelectedState(clicked);
     //setShiftedState(shift);
-    //setAnimateState("animate-zoom-rev");
+    props.setAnimateState("animate-zoom-rev");
     //props.history.push("/React-Demos");
+    console.log(props.animateState);
     setTimeout(() => {
       //setAnimateState("hideImportant");
       //setShiftedState("locktop");
@@ -31,12 +32,13 @@ export const LeftBar = (props) => {
 
   return (
     <>
-    <div className="leftbar w3-animate-zoom">
+    <div className={`leftbar ${props.animateState}`}>
       <i
         onClick={() => whenClicked("home", "", "/")}
         className="fas fa-home"
       ></i>
       <i
+        onClick={() => whenClicked("react-Selected", "", "/ReactDemos")}
         className={
           (selectedState === "react-Selected")// != for difrent effect
             ? `fab fa-react w3-spin active`
@@ -44,6 +46,7 @@ export const LeftBar = (props) => {
             //: `gridBox ${selectedState} ${shiftedState}`
       }></i>
       <i
+        onClick={() => whenClicked("html5-Selected", "", "/HTMLDemos")}
         className={
             (selectedState === "html5-Selected")// != for difrent effect
               ? `fab fa-html5 active`
@@ -52,6 +55,7 @@ export const LeftBar = (props) => {
         }
       ></i>
       <i
+        onClick={() => whenClicked("github-Selected", "", "/https://github.com/newbi462")}
         className={
             (selectedState === "github-Selected")// != for difrent effect
               ? `fab fa-github-square active`

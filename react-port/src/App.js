@@ -7,6 +7,7 @@ import './App.scss';
 import { NavBar } from "./Components/NavBar";
 import { HomePage } from "./Components/HomePage";
 import { ReactDemos } from "./Components/ReactDemos";
+import { HTMLDemos } from "./Components/HTMLDemos";
 
 import { ContextBox } from "./Context/ContextBox";
 
@@ -34,6 +35,7 @@ function App() {
 
           <Route exact path="/" component={HomePage} />
           <Route path="/ReactDemos" component={ReactDemos} />
+          <Route path="/HTMLDemos" component={HTMLDemos} />
 
           <Route
             path="/https://github.com/newbi462"
