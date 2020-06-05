@@ -64,6 +64,7 @@ export const LeftBar = (props) => {
         }
       ></i>
       <i
+        onClick={() => whenClicked("css3-Selected", "", "/AboutCSSs")}
         className={
             (selectedState === "css3-Selected")// != for difrent effect
               ? `fab fa-css3-alt active`
@@ -72,6 +73,7 @@ export const LeftBar = (props) => {
         }
       ></i>
       <i
+        onClick={() => whenClicked("less-Selected", "", "/AboutCSSs")}
         className={
             (selectedState === "less-Selected")// != for difrent effect
               ? `fab fa-less active`
@@ -80,6 +82,7 @@ export const LeftBar = (props) => {
         }
       ></i>
       <i
+        onClick={() => whenClicked("sass-Selected", "", "/AboutCSSs")}
         className={
             (selectedState === "sass-Selected")// != for difrent effect
               ? `fab fa-sass active`

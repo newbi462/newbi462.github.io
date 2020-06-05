@@ -74,15 +74,36 @@ export const HomePage = (props) => {
         <i className="fab fa-github-square"></i>
         <span>GitHub</span>
       </div>
-      <div className={`gridBox Odd ${animateState}`}>
+      <div
+        onClick={() => whenClicked("css3-Selected", "", "/AboutCSSs")}
+        className={
+          (selectedState != "css3-Selected")
+            ? `gridBox Odd hover ${animateState}`
+            : `gridBox Odd hover ${animateState}`
+        }
+      >
         <i className="fab fa-css3-alt"></i>
         <span>CSS</span>
       </div>
-      <div className={`gridBox ${animateState}`}>
+      <div
+        onClick={() => whenClicked("less-Selected", "", "/AboutCSSs")}
+        className={
+          (selectedState != "less-Selected")
+            ? `gridBox hover ${animateState}`
+            : `gridBox hover ${animateState}`
+        }
+      >
         <i className="fab fa-less"></i>
         <span>LESS</span>
       </div>
-      <div className={`gridBox Odd ${animateState}`}>
+      <div
+        onClick={() => whenClicked("sass-Selected", "", "/AboutCSSs")}
+        className={
+          (selectedState != "sass-Selected")
+            ? `gridBox Odd hover ${animateState}`
+            : `gridBox Odd hover ${animateState}`
+        }
+      >
         <i className="fab fa-sass"></i>
         <span>SASS</span>
       </div>

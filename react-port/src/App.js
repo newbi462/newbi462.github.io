@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 //import logo from './logo.svg';
+
+//Tools and Hooks
 import { Route } from "react-router-dom";
 
+//Style
 import './App.scss';
 
+//Components
 import { NavBar } from "./Components/NavBar";
 import { HomePage } from "./Components/HomePage";
 import { ReactDemos } from "./Components/ReactDemos";
 import { HTMLDemos } from "./Components/HTMLDemos";
+import { AboutCSSs } from "./Components/AboutCSSs";
 
+//Coontext/STATE
 import { ContextBox } from "./Context/ContextBox";
 
 function App() {
@@ -36,6 +42,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route path="/ReactDemos" component={ReactDemos} />
           <Route path="/HTMLDemos" component={HTMLDemos} />
+          <Route path="/AboutCSSs" component={AboutCSSs} />
 
           <Route
             path="/https://github.com/newbi462"

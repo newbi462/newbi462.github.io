@@ -81,6 +81,7 @@
   justify-content: space-between;
   flex-flow: row wrap;
   width: 92%;
+  position: absolute;
   top: 0px;
   right: 0px;
   padding-bottom: 70px;
@@ -123,6 +124,88 @@
 
 .hideImportant {
   z-index: -999;
+}
+
+//CSS SASS LESS section
+.CSScBox {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 92%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-bottom: 70px;
+  .make23box {
+    width: 65%;
+    //border: 1px solid $mainFont;
+    padding: 10px 15px;
+    margin: 0px;
+    text-align: left;
+    a {
+      color: $mainColor;
+      text-decoration: none;
+    }
+    p {
+      padding: 0px;
+      margin: 0.75rem 0;
+      font-size: 1.15rem;
+    }
+    ul {
+     list-style-type: disc;
+     list-style-position: inside;
+     font-size: 1.2rem;
+     padding-left: 15px;
+    }
+    ol {
+     list-style-type: decimal;
+     list-style-position: inside;
+    }
+    ul ul, ol ul {
+     list-style-type: circle;
+     list-style-position: inside;
+     margin-left: 15px;
+    }
+    ol ol, ul ol {
+     list-style-type: lower-latin;
+     list-style-position: inside;
+     margin-left: 15px;
+    }
+  }
+  .make23box-img {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    //border: 1px solid $mainFont;
+    //text-align: center;
+    align-content: center;
+    justify-content: center;
+    i {
+      font-size: 13rem;
+    }
+  }
+  @media (max-width: $tablet) {
+    .make23box {
+      width: 50%;
+    }
+    .make23box-img {
+      width: 50%;
+    }
+  }
+  @media (max-width: $mobile) {
+    .make23box {
+      width: 100%;
+      ul {
+       list-style-type: disc;
+       list-style-position: inside;
+       font-size: 0.85rem;
+       padding-left: 2px;
+      }
+    }
+    .make23box-img {
+      width: 100%;
+    }
+  }
 }
 
 
