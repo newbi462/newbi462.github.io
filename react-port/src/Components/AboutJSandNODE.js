@@ -41,7 +41,7 @@ export const AboutJSandNODE = (props) => {
         <p>Fortunately, I am skilled in all three areas as a developer, so in my case, JS is a true swiss army knife for me when working as a developer on a stack that makes use of it.</p>
       </div>
       <div className={`make23box-img ${animateState}`}>
-        <i className="fab fa-react"></i>
+        <i className="fab fa-react w3-spin"></i>
       </div>
     </div>
     </>

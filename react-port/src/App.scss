@@ -42,8 +42,19 @@
 @import 'SASS/Homepage';
 @import 'SASS/ReactDemos';
 
+
 .active {
   color: $mainColor;
+}
+
+.mob-only {
+  display: none;
+  @media (max-width: $tablet) {
+
+  }
+  @media (max-width: $mobile) {
+    display: inline-block;
+  }
 }
 
 .leftbar {
@@ -81,9 +92,9 @@
   justify-content: space-between;
   flex-flow: row wrap;
   width: 92%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  //position: absolute;
+  //top: 0px;
+  //right: 0px;
   padding-bottom: 70px;
   .make23box-img {
     display: flex;
@@ -132,9 +143,9 @@
   justify-content: space-between;
   flex-flow: row wrap;
   width: 92%;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  //position: absolute;
+  //top: 0px;
+  //right: 0px;
   padding-bottom: 70px;
   .make23box {
     width: 65%;

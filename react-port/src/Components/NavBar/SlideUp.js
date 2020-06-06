@@ -16,7 +16,8 @@ export const SlideUp = ( props ) => {
       <div className="slideUpLeft">
         <section>
           <h2>Full Stack Web Developer</h2>
-          <p>An experienced old school LAMP developer, and new school MERN developer looking to put their knowledge to work for you. As a more seasoned developer, I have solved problems in many ways over the years. End of the day, I like to get something done. It is just my personality type. I do not do idle well. My main objective is always how much was accomplished, less so how hard I had to work to get it done. I prefer to work smart, but there are times one must work hard.</p>
+          <p>An experienced old school LAMP developer, and new school MERN developer looking to put their knowledge to work for you. As a more seasoned developer, I have solved problems in many ways over the years.</p>
+          <p>End of the day, I like to get something done. It is just my personality type. I do not do idle well. My main objective is always how much was accomplished, less so how hard I had to work to get it done. I prefer to work smart, but there are times one must work hard.</p>
         </section>
 
         <section className="followMe">

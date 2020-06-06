@@ -80,6 +80,9 @@ export const NavBar = (props) => {
           <Link to="https://www.linkedin.com/in/russell-h-bb049256/">
             <i className="fab fa-linkedin"></i>
           </Link>
+          <Link className="mob-only" to="/">
+            <i className="fas fa-home mob-only"></i>
+          </Link>
         </div>
       </div>
 
