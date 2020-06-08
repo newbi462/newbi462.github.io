@@ -1,7 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+
+//Tools and Hooks
+import axios from "axios";
 import { Link } from "react-router-dom";
 
+//Style
+
+//Components
+
+//Coontext/STATE
+
+
 export const SlideUp = ( props ) => {
+  const [contactForm, setContactForm] = useState(
+    {
+      name: "",
+      email: "",
+      reason: "",
+      message: ""
+    }
+  );
+
+  const handleChange = (event) => {
+    setContactForm(
+      {
+        ...contactForm,
+        [event.target.name]: event.target.value
+      }
+    );
+  };
+
+  // make a post request to retrieve a token from the api
+  const passEmail = (event) => {
+    event.preventDefault();
+    axios
+      .post("https://cors-anywhere.herokuapp.com/http://theshowthatsux.com/testcode/test.php", contactForm)
+      .then(responce => {
+        console.log(responce);
+        //localStorage.setItem("token", responce.data.payload);
+        //props.history.push("/protected");
+      })
+      .catch(error => console.log(error));
+  };
+
+
+
   return (
     <>
     <i onClick=
@@ -27,15 +70,23 @@ export const SlideUp = ( props ) => {
             <li><i className="fab fa-facebook-square"></i></li>
             <li><i className="fab fa-instagram"></i></li>*/}
             <li>
-              <Link to="https://github.com/newbi462">
-                <i className="fab fa-github"></i>
-              </Link>
+              <i
+                onClick={() => {
+                  window.open("https://github.com/newbi462", "_blank");
+                  return null;
+                }}
+                className="fab fa-github"
+              ></i>
             </li>
             {/*<li>Dribbble</li>*/}
             <li>
-              <Link to="https://www.linkedin.com/in/russell-h-bb049256/">
-                <i className="fab fa-linkedin"></i>
-              </Link>
+              <i
+                onClick={() => {
+                  window.open("https://www.linkedin.com/in/russell-h-bb049256/", "_blank");
+                  return null;
+                }}
+                className="fab fa-linkedin"
+              ></i>
             </li>
           </ul>
         </section>
@@ -44,17 +95,35 @@ export const SlideUp = ( props ) => {
       <section className="slideUpRight">
         <h2>Get in touch</h2>
         {/*<form method="post" action="/">*/}
-        <form>
+        <form onSubmit={passEmail}>
           <div className="fields">
             <div className="field half">
-              <input type="text" name="name" id="name" placeholder="Name" />
+              <input
+                type="text"
+                name="name"
+                value={contactForm.name}
+                placeholder="Name"
+                onChange={handleChange}
+              />
             </div>
             <div className="field half">
-              <input type="text" name="email" id="email" placeholder="Email" />
+              <input
+                type="text"
+                name="email"
+                value={contactForm.email}
+                placeholder="Email"
+                onChange={handleChange}
+              />
             </div>
 
             <div className="field full">
-              <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+              <textarea
+                name="message"
+                rows="4"
+                value={contactForm.message}
+                placeholder="Message"
+                onChange={handleChange}
+              />
             </div>
           </div>
           <div className="actions">

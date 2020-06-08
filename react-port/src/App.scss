@@ -138,6 +138,9 @@
 }
 
 //CSS SASS LESS section
+// JS / NODE dection
+// PHP section
+// GraphQL
 .CSScBox {
   display: flex;
   justify-content: space-between;
@@ -193,6 +196,13 @@
     justify-content: center;
     i {
       font-size: 13rem;
+    }
+    img {
+      height: 13rem;
+      width: 13rem;
+      text-align: center;
+      margin: 0 auto 0 auto;
+      filter: invert(1);
     }
   }
   @media (max-width: $tablet) {

@@ -55,7 +55,10 @@ export const LeftBar = (props) => {
         }
       ></i>
       <i
-        onClick={() => whenClicked("github-Selected", "", "/https://github.com/newbi462")}
+        onClick={() => {
+          window.open("https://github.com/newbi462", "_blank");
+          return null;
+        }}
         className={
             (selectedState === "github-Selected")// != for difrent effect
               ? `fab fa-github-square active`
@@ -109,6 +112,7 @@ export const LeftBar = (props) => {
         }
       ></i>
       <i
+        onClick={() => whenClicked("php-Selected", "", "/AboutPHP")}
         className={
             (selectedState === "php-Selected")// != for difrent effect
               ? `fab fa-php active`
@@ -117,6 +121,7 @@ export const LeftBar = (props) => {
         }
       ></i>
       <img
+        onClick={() => whenClicked("GraphQL-Selected", "", "/AboutGraphQL")}
         className={
             (selectedState === "GraphQL-Selected")// != for difrent effect
               ? `active`

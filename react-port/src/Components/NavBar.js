@@ -74,12 +74,20 @@ export const NavBar = (props) => {
 
 
         <div className="menuBarRight">
-          <Link to="https://github.com/newbi462">
-            <i className="fab fa-github"></i>
-          </Link>
-          <Link to="https://www.linkedin.com/in/russell-h-bb049256/">
-            <i className="fab fa-linkedin"></i>
-          </Link>
+          <i
+            onClick={() => {
+              window.open("https://github.com/newbi462", "_blank");
+              return null;
+            }}
+            className="fab fa-github"
+          ></i>
+          <i
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/russell-h-bb049256/", "_blank");
+              return null;
+            }}
+            className="fab fa-linkedin"
+          ></i>
           <Link className="mob-only" to="/">
             <i className="fas fa-home mob-only"></i>
           </Link>
