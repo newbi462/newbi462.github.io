@@ -24,7 +24,7 @@ export const AboutCSSs = (props) => {
       </div>
       <div className={`make23box ${animateState}`}>
         <h2>CSS | CSS3 | Sass | Less</h2>
-        <p>These all are a set of very closely related solutions that make use of CSS (Cascading Style Sheets) to style the look and feel of the end result HTML Mark up regardless of how it is rendered. But while related it is best to think of them like a set of wrenches or ratchets. At times you need metric and at times you need inches. The right tool for the job as it were.</p>
+        <p>These all are a set of very closely related solutions that make use of CSS (Cascading Style Sheets) to style the look and feel of the end resulting HTML mark up regardless of how it is rendered. But, while related, it is best to think of them as a set of wrenches or ratchets. At times you need metric and at times you need inches. The right tool for the job as it were.</p>
       </div>
 
       <div className={`make23box ${animateState}`}>
@@ -40,7 +40,7 @@ export const AboutCSSs = (props) => {
       </div>
       <div className={`make23box ${animateState}`}>
         <p>SASS and LESS are competing standards for automating some of the CSS creation using a complied approach, which brings us back to inches Vs metric. The syntax differences between them are minor, to the point that most experienced developers can pick the other one up from the documentation alone. However, they are not interchangeable. Because they are competing standards some other tools such as React simply play nicer with one standard over the other. It is best for this reason when using either that you pick the one that integrates well with the rest of your stack.</p>
-        <p>Fortunately, I have experance with all of them and am comfortable using all of them.</p>
+        <p>Fortunately, I have experience with all of them and am comfortable using all of them.</p>
       </div>
     </div>
     </>
