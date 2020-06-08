@@ -28,6 +28,9 @@ nav {
           color: $mainColor;
           transform: translate(0px) scale(1.12)
         }
+        a {
+          text-decoration: none;
+        }
       }
       i {
         margin: 0 8px;

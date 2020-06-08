@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
 //import { TweenLite, TweenMax, TimelineLite, TimelineMax,  } from "gsap";
@@ -8,12 +8,40 @@ import { Link } from "react-router-dom";
 //import { fab } from '@fortawesome/free-brands-svg-icons'
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+//Tools and Hooks
+
+//Style
+// npm install --save-dev @iconify/react @iconify/icons-logos
+
+//not using right now as filer is hard code hack
+
+//Components
 import { SlideUp } from "./NavBar/SlideUp";
+
+//Coontext/STATE
+import { ContextBox } from "./../Context/ContextBox";
 
 export const NavBar = (props) => {
   let [slideUpState, setSlideUpState] = useState("hideit");
   let [hambugerState, setHambugerState] = useState("menuBarLeft");
   let [xToggleState, setXToggleState] = useState("hideit");
+  const { selectedState, setSelectedState } = useContext(ContextBox);
+
+  let whenClicked = (clicked, shift, route) => {
+    console.log(clicked);
+    setSelectedState(clicked);
+    //setShiftedState(shift);
+    //props.setAnimateState("animate-zoom-rev");
+    //props.history.push("/React-Demos");
+    console.log(props.animateState);
+    setTimeout(() => {
+      //setAnimateState("hideImportant");
+      //setShiftedState("locktop");
+      //console.log(props);
+      //props.history.push(route);
+    }, 599);
+  };
+  console.log(props);
 
   return (
     <>
@@ -47,6 +75,11 @@ export const NavBar = (props) => {
               }}
             >
             Russ Hacker
+          </div>
+          <div
+            onClick={() => whenClicked("react-Selected", "", "/ReactDemos")}
+            className="nameBox">
+            <Link to="/ReactDemos">Recent Apps</Link>
           </div>
         </div>
 

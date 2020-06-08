@@ -27,8 +27,8 @@ export const LeftBar = (props) => {
       props.history.push(route);
     }, 599);
   };
-  console.log("left bar");
-  console.log(props);
+  //console.log("left bar");
+  //console.log(props);
 
   return (
     <>
