@@ -21,8 +21,8 @@ export const AboutGraphQL = (props) => {
     <div className="CSScBox">
       <div className={`make23box ${animateState}`}>
         <h2>GraphQL Vs REST, or RESTful API</h2>
-        <p>GraphQL is likely the future of APIs in some form, but it is also overall a more new technology which has some pros and cons to it. Like REST is is more a guideline than a hard-fast standard. But it does handle CRUD and End-Points a little different.</p>
-        <p>The main benefit of GraphQL is the one endpoint can in theory handle all of the CRUD/REST sets, so when done right it is less overall development.</p>
+        <p>GraphQL is likely the future of APIs in some form, but it is also overall a more new technology which has some pros and cons to it. Like REST is more a guideline than a hard-fast standard. But it does handle CRUD and end-points a little different.</p>
+        <p>The main benefit of GraphQL is the one endpoint can in theory handle all of the CRUD/REST sets, so when done right it is less overall development, or work.</p>
       </div>
       <div className={`make23box-img ${animateState}`}>
         <img
@@ -35,15 +35,15 @@ export const AboutGraphQL = (props) => {
         <i className="fas fa-server"></i>
       </div>
       <div className={`make23box ${animateState}`}>
-        <p>The debate at this time is in practice only simple data calls self resolve. So in practice how scalable a GraphQL API is will come down to how well thought out the schema and data relations were.</p>
-        <p>Solutions like Prisma and RedwoodJS use the schema and the relationships defined in it to generate a full set of CRUD endpoints, rather needed or not. This can create extra work that is unneeded in a RESTful approach to address relationships for data sets that will never be used or needed. Aside from this 0% to Done, bottleneck, not all data is self resolve. More complex calls to the data set require a resolver function that will call the related CRUD sets made from the schema to create the target output for the end-user.</p>
-        <p>In practice, the overall logic of a resolver while different in implementation details is the JOIN and CRUD logic some RESTful APIs require. But, it should be noted in some cases it can actually take more work to maintain a GraphQL API than a RESTful API; which seems a paradox given that the main selling point of this new standard is more maintainability.</p>
+        <p>The debate at this time is in practice only simple data calls self resolve. So in practice, how scalable a GraphQL API is will come down to how well thought out the schema and data relations were.</p>
+        <p>Solutions like Prisma and RedwoodJS use the schema and the relationships defined in it to generate a full set of CRUD endpoints, rather needed or not. This can create extra work that is unneeded in a RESTful approach to address relationships for data sets that will never be used or needed. Aside from this 0% to done, bottleneck, not all data is self-resolve. More complex calls to the data set require a resolver function that will call the related CRUD sets made from the schema to create the target output for the end-user.</p>
+        <p>In practice, the overall logic of a resolver, while different in implementation details, is the JOIN and CRUD logic some RESTful APIs require. But, it should be noted in some cases it can actually take more work to maintain a GraphQL API than a RESTful API, which seems a paradox given that the main selling point of this new standard is more maintainability.</p>
       </div>
 
 
       <div className={`make23box ${animateState}`}>
-        <p>However, from the Front-End POV regardless of if GraphQL is more or less work than REST to set up and maintain the experience is night and day.</p>
-        <p>Properly set up and resolved, the resulting GraphQL endpoint is one API to rule them all. Dynamically allowing any call to query any data that could be received in the end form the Frontend using it wants it in as if it was tailor-made for their implementation of this API. There are likely very few long term projects where the long term savings of bandwidth from not returning unneeded data would not justify any extra upfront work or investment GraphQL would need.</p>
+        <p>However, from the Front-End POV regardless of if GraphQL is more or less work than REST to set up and maintain, the experience is night and day.</p>
+        <p>Properly set up and resolved, the resulting GraphQL endpoint is one API to rule them all. Dynamically allowing any call to query any data that could be received in an end form the front-end accessing it seeks as if it was tailor-made for their implementation of this API. There are likely very few long term projects where the long term savings of bandwidth, from not returning unneeded data, would not justify any extra upfront work or investment GraphQL would need.</p>
         <p>But at this time it is a developing technology, and the developer pool is smaller. I am privileged to have experience in what is likely long term the next standard for APIs, but at this time it is very much a pro-con if now is the time to switch your individual API over.</p>
       </div>
       <div className={`make23box-img ${animateState}`}>
